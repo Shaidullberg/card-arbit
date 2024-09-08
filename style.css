@@ -1,0 +1,81 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #333; /* Темный фон */
+    color: #fff; /* Белый текст */
+    font-size: 18px; /* Увеличенный шрифт */
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #222; /* Темный фон контейнера */
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.1); /* Светлая тень */
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .product-list {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .product-list li {
+    margin-bottom: 10px;
+  }
+  
+  .product-list label {
+    cursor: pointer;
+  }
+  
+  .product-list label:hover {
+    text-decoration: underline;
+  }
+  
+  .product-list label[title]:hover::after {
+    content: attr(title);
+    display: block;
+    position: absolute;
+    background-color: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    top: 100%;
+    left: 0;
+    white-space: nowrap;
+    z-index: 1; /* Подсказка будет отображаться поверх текста */
+  }
+  
+  #calculate-btn {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin-top: 20px;
+    background-color: #007bff; /* Синяя кнопка */
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .results {
+    margin-top: 20px;
+    text-align: center;
+  }
+  
+  @media screen and (max-width: 600px) {
+    .container {
+      margin: 10px;
+      padding: 10px;
+    }
+  
+    h1 {
+      font-size: 1.5em;
+    }
+  }

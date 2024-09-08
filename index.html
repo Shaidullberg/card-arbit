@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Расчет вознаграждения</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Калькулятор вознаграждения</h1>
+    <ul class="product-list">
+      <li>
+        <input type="checkbox" id="product1" data-reward="2280.00">
+        <label for="product1" title="Выдача + транзакция на любую сумму">ВТБ - Платежный стикер</label>
+      </li>
+      <li>
+        <input type="checkbox" id="product2" data-reward="2280.00">
+        <label for="product2" title="Выдача + транзакция на любую сумму">ВТБ - Дебетовая карта МИР</label>
+      </li>
+      <li>
+        <input type="checkbox" id="product3" data-reward="5320.00">
+        <label for="product3" title="Выдача + транзакция на любую сумму">ВТБ - Кредитная карта</label>
+      </li>
+      <li>
+        <input type="checkbox" id="product4" data-reward="1333.00">
+        <label for="product4" title="Выдача + транзакция на любую сумму">Дебетовая Альфа-карта</label>
+      </li>
+      <li>
+        <input type="checkbox" id="product5" data-reward="1440.00">
+        <label for="product5" title="Выдача + транзакция на сумму от 100 ₽">Т-Банк — Black</label>
+      </li>
+      <li>
+        <input type="checkbox" id="product6" data-reward="2300.00">
+        <label for="product6" title="Выдача + транзакция на любую сумму">Газпромбанк - Дебетовая карта «Мир»</label>
+      </li>
+      <li>
+        <input type="checkbox" id="product7" data-reward="1466.00">
+        <label for="product7" title="Выдача + транзакция на сумму от 500 ₽">МТС Банк - Дебетовая карта «Скидка везде»</label>
+      </li>
+      <li>
+        <input type="checkbox" id="product8" data-reward="3000.00">
+        <label for="product8" title="Выдача + транзакция на любую сумму">Т-Банк — Карта Платинум (кешбэк)</label>
+      </li>
+      <li>
+        <input type="checkbox" id="product9" data-reward="2268.00">
+        <label for="product9" title="Выдача + транзакция на сумму от 1000 ₽">ОТП Банк - Дебетовая карта "ОТП Карта"</label>
+      </li>
+      <li>
+        <input type="checkbox" id="product10" data-reward="2500.00">
+        <label for="product10" title="Выдача + транзакция на любую сумму">Кредитная альфа карта (в приложении)</label>
+      </li>
+    </ul>
+    <button id="calculate-btn">Рассчитать</button>
+    <div class="results">
+      <p>Общая сумма вознаграждения: <span id="total-reward">0</span> ₽</p>
+      <p>Ваша выплата: <span id="user-reward">0</span> ₽</p>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
